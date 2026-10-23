@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Chungu Hub | Nairobi Pottery Directory</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <div id="site-nav"></div>
+
+  <section id="home" class="hero">
+    <div class="slides">
+      <div class="slide active" style="--bg: url('images/hero/slide1.jpg')">
+        <div class="slide-text">
+          <h1>Chungu Hub</h1>
+          <p>Discover every pottery shop in Nairobi in one place.</p>
+          <a class="btn btn-call" href="#shops">Browse shops</a>
+        </div>
+      </div>
+      <div class="slide" style="--bg: url('images/hero/slide2.jpg')">
+        <div class="slide-text">
+          <h2>Handmade, Local, Beautiful</h2>
+          <p>Support Nairobi potters: mugs, planters, dinner sets and more.</p>
+          <a class="btn btn-call" href="about.html">About us</a>
+        </div>
+      </div>
+      <div class="slide" style="--bg: url('images/hero/slide3.jpg')">
+        <div class="slide-text">
+          <h2>Call or Order Directly</h2>
+          <p>Pick a shop, see what it sells, then call or WhatsApp to order.</p>
+          <a class="btn btn-call" href="contact.html">Get in touch</a>
+        </div>
+      </div>
+    </div>
+    <button class="arrow prev" id="prevSlide" aria-label="Previous slide">&#10094;</button>
+    <button class="arrow next" id="nextSlide" aria-label="Next slide">&#10095;</button>
+    <div class="dots" id="dots"></div>
+  </section>
+
+  <section id="shops" class="section alt">
+    <div class="container">
+      <h2 class="section-title">Pottery Shops in Nairobi</h2>
+      <div class="filters">
+        <input type="search" id="search" placeholder="Search shops or products...">
+        <select id="areaFilter">
+          <option value="">All areas</option>
+        </select>
+      </div>
+      <p id="resultCount" class="result-count"></p>
+      <div id="shopGrid" class="grid"></div>
+    </div>
+  </section>
+
+  <div id="site-footer"></div>
+
+  <script src="js/shops.js"></script>
+  <script src="js/layout.js"></script>
+  <script src="js/main.js"></script>
+  <script src="js/home.js"></script>
+</body>
+</html>
