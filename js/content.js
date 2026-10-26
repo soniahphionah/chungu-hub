@@ -1,25 +1,20 @@
 const news = [
   {
-    date: "20 Oct 2026",
-    tag: "Launch",
-    title: "Chungu Hub is live",
-    text: "Find pottery shops across Nairobi in one place and order directly."
+    date: "26 Oct 2026",
+    tag: "Update",
+    title: "Chungu Hub now lists real pottery shops",
+    text: "We have started adding real pottery studios and craft centres from across Kenya, from Karen and Village Market to Gilgil, Mombasa and Kakamega."
   },
   {
-    date: "15 Oct 2026",
-    tag: "Event",
-    title: "Weekend pottery workshop in Kilimani",
-    text: "Clay Corner is hosting a beginner-friendly workshop this Saturday."
+    date: "Good to know",
+    tag: "Visit",
+    title: "Free factory tour at Kazuri in Karen",
+    text: "Kazuri Beads & Pottery Centre offers a free tour showing how clay is shaped, glazed and fired by hand."
   },
   {
-    date: "10 Oct 2026",
-    tag: "New shop",
-    title: "Udongo Studio joins Chungu Hub",
-    text: "Hand-thrown mugs, bowls and vases from Karen are now listed."
+    date: "Good to know",
+    tag: "Workshops",
+    title: "Pottery workshops at Bakuli Blu",
+    text: "Bakuli Blu in Gilgil runs pottery workshops for children and adults, and its workshop space can be hired for parties."
   }
-];
-
-const testimonials = [
-  { name: "Sample Customer", text: "I found a planter shop near me in two minutes. Great idea!", shop: "Mfinyanzi Crafts" },
-  { name: "Sample Customer", text: "Easy to compare shops and order on WhatsApp.", shop: "Udongo Studio" }
 ];

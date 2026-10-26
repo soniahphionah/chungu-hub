@@ -3,52 +3,132 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Chungu Hub | Nairobi Pottery Directory</title>
+  <title>Chungu Hub | Find Pottery Shops in Kenya</title>
+  <meta name="description" content="Chungu Hub is a directory of pottery shops and studios across Kenya. Find them, see what they make, then call or visit.">
   <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
   <div id="site-nav"></div>
 
+  <!-- HERO SLIDER -->
   <section id="home" class="hero">
     <div class="slides">
-      <div class="slide active" style="--bg: url('images/hero/slide1.jpg')">
+      <div class="slide active" style="--bg:url('images/hero/slide1.jpg'); --fallback:linear-gradient(135deg,#c4673f,#6e2c18)">
         <div class="slide-text">
+          <span class="kicker">Kenya's pottery directory</span>
           <h1>Chungu Hub</h1>
-          <p>Discover every pottery shop in Nairobi in one place.</p>
-          <a class="btn btn-call" href="#shops">Browse shops</a>
+          <p>Every pottery shop, studio and craft centre in Kenya, in one place.</p>
+          <div class="hero-btns">
+            <a class="btn btn-light" href="shops.html">Browse shops</a>
+            <a class="btn btn-ghost" href="about.html">How it works</a>
+          </div>
         </div>
       </div>
-      <div class="slide" style="--bg: url('images/hero/slide2.jpg')">
+      <div class="slide" style="--bg:url('images/hero/slide2.jpg'); --fallback:linear-gradient(135deg,#8f3f27,#3b1a10)">
         <div class="slide-text">
-          <h2>Handmade, Local, Beautiful</h2>
-          <p>Support Nairobi potters: mugs, planters, dinner sets and more.</p>
-          <a class="btn btn-call" href="about.html">About us</a>
+          <span class="kicker">Handmade &amp; local</span>
+          <h2>From Karen to Kakamega</h2>
+          <p>Mugs, plates, planters and art pots, shaped by Kenyan hands.</p>
+          <div class="hero-btns">
+            <a class="btn btn-light" href="shops.html">See the shops</a>
+          </div>
         </div>
       </div>
-      <div class="slide" style="--bg: url('images/hero/slide3.jpg')">
+      <div class="slide" style="--bg:url('images/hero/slide3.jpg'); --fallback:linear-gradient(135deg,#d49a54,#8a4a1d)">
         <div class="slide-text">
-          <h2>Call or Order Directly</h2>
-          <p>Pick a shop, see what it sells, then call or WhatsApp to order.</p>
-          <a class="btn btn-call" href="contact.html">Get in touch</a>
+          <span class="kicker">Try it yourself</span>
+          <h2>Pottery classes &amp; workshops</h2>
+          <p>Find studios where you can sit at the wheel and make your own piece.</p>
+          <div class="hero-btns">
+            <a class="btn btn-light" href="shops.html?classes=1">Find classes</a>
+          </div>
         </div>
       </div>
+      <div class="slide" style="--bg:url('images/hero/slide4.jpg'); --fallback:linear-gradient(135deg,#8f3f27,#3b1a10)">
+  <div class="slide-text">
+    <span class="kicker">Mugs &amp; tableware</span>
+    <h2>Start your morning with a handmade mug</h2>
+    <p>Plates, bowls and teapots made by potters near you.</p>
+    <div class="hero-btns">
+      <a class="btn btn-light" href="shops.html?q=mugs">Shop tableware</a>
+    </div>
+  </div>
+</div>
     </div>
     <button class="arrow prev" id="prevSlide" aria-label="Previous slide">&#10094;</button>
     <button class="arrow next" id="nextSlide" aria-label="Next slide">&#10095;</button>
     <div class="dots" id="dots"></div>
   </section>
 
-  <section id="shops" class="section alt">
-    <div class="container">
-      <h2 class="section-title">Pottery Shops in Nairobi</h2>
-      <div class="filters">
-        <input type="search" id="search" placeholder="Search shops or products...">
-        <select id="areaFilter">
-          <option value="">All areas</option>
-        </select>
+  <!-- STATS -->
+  <section class="stats">
+    <div class="stat"><strong id="statShops">0</strong><span>Shops listed</span></div>
+    <div class="stat"><strong id="statRegions">0</strong><span>Regions covered</span></div>
+    <div class="stat"><strong id="statClasses">0</strong><span>Offer classes</span></div>
+    <div class="stat"><strong>Free</strong><span>For everyone to use</span></div>
+  </section>
+
+  <!-- INTRO -->
+  <section class="section">
+    <div class="container split">
+      <div class="img-box tall" style="--img:url('images/home/potter-hands.jpg'); --fallback:linear-gradient(160deg,#d98b6a,#8f3f27)"><span>🏺</span></div>
+      <div>
+        <span class="eyebrow">Why Chungu Hub</span>
+        <h2 class="display">Chungu means pot. This is where Kenya's pots live.</h2>
+        <p>
+          Great pottery is made all over Kenya, from quiet studios in Karen to village
+          roadsides in Kakamega, but it is hard to find. Chungu Hub brings it together
+          so you can discover who is making what, and where.
+        </p>
+        <p>
+          Every shop has its own page with a description, what they make, how to reach them
+          and a map, so you can call, visit or order straight from the maker.
+        </p>
+        <a class="btn btn-call" href="shops.html">Explore the shops</a>
       </div>
-      <p id="resultCount" class="result-count"></p>
-      <div id="shopGrid" class="grid"></div>
+    </div>
+  </section>
+
+  <!-- CATEGORIES -->
+  <section class="section alt">
+    <div class="container">
+      <span class="eyebrow center">What are you looking for?</span>
+      <h2 class="section-title">Find pottery your way</h2>
+      <div class="tiles">
+        <a class="tile" href="shops.html?q=mugs" style="--img:url('images/home/tableware.jpg'); --fallback:linear-gradient(135deg,#c4673f,#7a3520)"><span class="tile-icon">☕</span><h3>Mugs &amp; tableware</h3><p>Plates, bowls, teapots</p></a>
+        <a class="tile" href="shops.html?q=pots" style="--img:url('images/home/planters.jpg'); --fallback:linear-gradient(135deg,#6f8f5a,#35502a)"><span class="tile-icon">🪴</span><h3>Pots &amp; planters</h3><p>For home and garden</p></a>
+        <a class="tile" href="shops.html?q=art" style="--img:url('images/home/art-pots.jpg'); --fallback:linear-gradient(135deg,#d49a54,#8a4a1d)"><span class="tile-icon">🎨</span><h3>Art &amp; gifts</h3><p>Beads, art pots, souvenirs</p></a>
+        <a class="tile" href="shops.html?classes=1" style="--img:url('images/home/classes.jpg'); --fallback:linear-gradient(135deg,#8f6a8f,#4d2f4d)"><span class="tile-icon">🧑‍🎨</span><h3>Classes</h3><p>Learn at the wheel</p></a>
+      </div>
+    </div>
+  </section>
+
+  <!-- HOW IT WORKS -->
+  <section class="section">
+    <div class="container">
+      <span class="eyebrow center">Simple</span>
+      <h2 class="section-title">How it works</h2>
+      <div class="steps">
+        <div class="step"><b>1</b><h3>Find</h3><p>Browse all shops or search by name, area or what they make.</p></div>
+        <div class="step"><b>2</b><h3>Explore</h3><p>Open a shop to read about it, see where it is and check opening details.</p></div>
+        <div class="step"><b>3</b><h3>Connect</h3><p>Call, email or get directions, and order straight from the maker.</p></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- QUOTE BANNER -->
+  <section class="quote-banner" style="--img:url('images/home/clay-banner.jpg'); --fallback:linear-gradient(135deg,#8f3f27,#3b1a10)">
+    <blockquote>
+      “Every piece starts as soil and ends as something you use every day.”
+    </blockquote>
+  </section>
+
+  <!-- CTA -->
+  <section class="section">
+    <div class="container cta">
+      <h2 class="display">Do you make or sell pottery?</h2>
+      <p>Get your shop listed on Chungu Hub and let more people find you.</p>
+      <a class="btn btn-call" href="contact.html">Get listed</a>
     </div>
   </section>
 
@@ -56,7 +136,6 @@
 
   <script src="js/shops.js"></script>
   <script src="js/layout.js"></script>
-  <script src="js/main.js"></script>
   <script src="js/home.js"></script>
 </body>
 </html>

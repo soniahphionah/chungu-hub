@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Shops | Chungu Hub</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <div id="site-nav"></div>
+
+  <header class="page-banner">
+    <h1>Pottery Shops in Kenya</h1>
+    <p>Choose a shop to see what it makes and how to reach it</p>
+  </header>
+
+  <section class="section">
+    <div class="container">
+      <a class="back-btn" href="index.html">&larr; Back to home</a>
+
+      <div class="filters">
+        <input type="search" id="search" placeholder="Search by name, area or what they make...">
+        <select id="regionFilter">
+          <option value="">All regions</option>
+        </select>
+        <label class="check"><input type="checkbox" id="classesOnly"> Offers classes</label>
+      </div>
+
+      <p id="resultCount" class="result-count"></p>
+      <div id="shopGrid" class="grid"></div>
+
+      <p class="note center-note">
+        Know a pottery shop that is not listed? <a href="contact.html"><strong>Tell us</strong></a> and we will add it.
+      </p>
+    </div>
+  </section>
+
+  <div id="site-footer"></div>
+
+  <script src="js/shops.js"></script>
+  <script src="js/layout.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>

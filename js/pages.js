@@ -1,3 +1,4 @@
+// News page
 const newsGrid = document.getElementById("newsGrid");
 if (newsGrid) {
   newsGrid.innerHTML = news.map(n => `
@@ -10,16 +11,7 @@ if (newsGrid) {
   `).join("");
 }
 
-const quotesBox = document.getElementById("testimonials");
-if (quotesBox) {
-  quotesBox.innerHTML = testimonials.map(t => `
-    <blockquote class="quote">
-      <p>“${t.text}”</p>
-      <footer>${t.name} · ${t.shop}</footer>
-    </blockquote>
-  `).join("");
-}
-
+// Contact form (Formspree)
 document.querySelectorAll(".ajax-form").forEach(form => {
   const status = form.querySelector(".form-status");
 

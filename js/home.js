@@ -1,3 +1,4 @@
+// ---------- HERO SLIDER ----------
 const slides = document.querySelectorAll(".slide");
 const dotsBox = document.getElementById("dots");
 let current = 0;
@@ -18,10 +19,15 @@ function showSlide(index) {
 
 function restartTimer() {
   clearInterval(timer);
-  timer = setInterval(() => showSlide(current + 1), 5000);
+  timer = setInterval(() => showSlide(current + 1), 6000);
 }
 
 document.getElementById("prevSlide").addEventListener("click", () => { showSlide(current - 1); restartTimer(); });
 document.getElementById("nextSlide").addEventListener("click", () => { showSlide(current + 1); restartTimer(); });
 showSlide(0);
 restartTimer();
+
+// ---------- STATS (counted from shops.js) ----------
+document.getElementById("statShops").textContent = shops.length;
+document.getElementById("statRegions").textContent = new Set(shops.map(s => s.region)).size;
+document.getElementById("statClasses").textContent = shops.filter(s => s.classes).length;
