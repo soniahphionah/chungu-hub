@@ -100,7 +100,7 @@ const shops = [
     mapQuery: "Imani Ceramic Karen Nairobi",
     hours: "By appointment only",
     note: "Contact details are not published online. The website link opens a listing page about the studio.",
-    image: "images/shops/imani-ceramic.jpg",
+    image: "images/shops/imani-ceramic.png",
     products: []
   },
   {
